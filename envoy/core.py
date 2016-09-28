@@ -66,7 +66,7 @@ class Command(object):
             try:
                 self.process = subprocess.Popen(self.cmd,
                     universal_newlines=True,
-                    shell=False,
+                    shell=True,
                     env=environ,
                     stdin=subprocess.PIPE,
                     stdout=subprocess.PIPE,
